@@ -1,12 +1,23 @@
 <?php
 
-/**
- * Melhorias
- * 1) palavra chave final no método render da Controller
- * 2) Estender PDO na classe DAO
- * 3) Parametro levels no dirname
- */
+// Pegando a url
+$url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
- include 'config.php';
- include 'autoload.php';
- include 'rotas.php';
+switch($url)
+{
+    case '/':
+        echo "página inicial";
+    break;
+
+    case '/pessoa':
+        echo "listagem de pessoas";
+    break;
+
+    case '/pessoa/form':
+        echo "formulário para salvar pessoa";
+    break;
+
+    default:
+        echo "Erro 404";
+    break;
+}

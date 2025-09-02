@@ -24,3 +24,5 @@ link video: https://www.youtube.com/watch?v=HmkiRg2rVKo&list=PLHVpcBDJr5dnryHpC8
 link video: https://www.youtube.com/watch?v=pAs8oyWMhK0&list=PLHVpcBDJr5dnryHpC8t4OUI3JJF2xIBc9&index=5<br>
 Repositórios dos videos 3, 4 e 5: https://github.com/tiagotas/PHP_MVC_Exemplo_v2<br>
 - Projeto Básico Finalizado: Fim da Playlist
+
+<!-- php -S localhost:8000 Servidor de teste do php -->
