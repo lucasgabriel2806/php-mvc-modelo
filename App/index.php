@@ -1,5 +1,7 @@
 <?php
 
+include 'Controller/PessoaController.php';
+
 // Pegando a url
 $url = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
@@ -10,14 +12,20 @@ switch($url)
     break;
 
     case '/pessoa':
-        echo "listagem de pessoas";
+        PessoaController::index();
     break;
 
     case '/pessoa/form':
-        echo "formulário para salvar pessoa";
+        PessoaController::form();
+    break;
+
+    case '/pessoa/form/save':
+        PessoaController::save();
     break;
 
     default:
         echo "Erro 404";
     break;
 }
+
+// C - processar a requisição do usuario
